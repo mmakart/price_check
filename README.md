@@ -6,7 +6,7 @@ It's a simple price extractor and logger to see goods prices history.
 
 ## Usage
 
-Put the urls with the interested items into the file `goods.txt`, each in one line. To do this you can just open the page in any browser and copy the text from the address line. At the moment the program can only read the prices from online stores `nix.ru` and `citilink.ru`, the others don't give you result.
+Put the urls with the interested items into the file `goods.txt`, each in one line. To do this you can just open the page in any browser and copy the text from the address line. At the moment the program can only read the prices from online stores `nix.ru` and `citilink.ru`, the others won't give you the result.
 
 ### Sample content of `goods.txt`:
 
@@ -17,4 +17,4 @@ https://www.nix.ru/autocatalog/hp/hp_compaq_notebook/HP-17-ca2036ur-22V23EA-ACB-
 https://www.nix.ru/autocatalog/lcd_lg/_433809.html
 ```
 
-Prices will be written to log file every time the program is executed. You would like to automate the logging process. Then you should add the program to a task scheduler of your operating system (cron in UNIX-like systems and the Task Scheduler in MS Windows).
+Prices will be written to the text file `prices.log` every time the program is executed. You would like to automate the logging process. Then you should add the program to a task scheduler of your operating system (cron in UNIX-like systems and the Task Scheduler in MS Windows).
